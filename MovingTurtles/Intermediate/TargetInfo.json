@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "MovingTurtles",
+			"Path": "V:\\UnrealProjects\\MovingTurtles\\Source\\MovingTurtles.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MovingTurtlesEditor",
+			"Path": "V:\\UnrealProjects\\MovingTurtles\\Source\\MovingTurtlesEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
