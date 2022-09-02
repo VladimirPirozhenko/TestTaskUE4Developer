@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "MovingTurtles",
-			"Path": "V:\\UnrealProjects\\MovingTurtles\\Source\\MovingTurtles.Target.cs",
+			"Path": "C:\\Projects\\UnrealProjects\\TestTaskUE4Developer-main\\TestTaskUE4Developer-main\\MovingTurtles\\Source\\MovingTurtles.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "MovingTurtlesEditor",
-			"Path": "V:\\UnrealProjects\\MovingTurtles\\Source\\MovingTurtlesEditor.Target.cs",
+			"Path": "C:\\Projects\\UnrealProjects\\TestTaskUE4Developer-main\\TestTaskUE4Developer-main\\MovingTurtles\\Source\\MovingTurtlesEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

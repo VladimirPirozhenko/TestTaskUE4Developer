@@ -29,10 +29,10 @@ public:
 public:
 
 	UPROPERTY(VisibleDefaultsOnly, Category = Mesh)
-		class USkeletalMeshComponent* HandsMesh;
+	class USkeletalMeshComponent* HandsMesh;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
-		class UCameraComponent* FPSCamera;
+	class UCameraComponent* FPSCamera;
 
 	UPROPERTY(VisibleDefaultsOnly, BlueprintReadOnly, Category = Camera)
 	float TurnRate;
@@ -42,11 +42,20 @@ public:
 
 protected:
 
-	void Interact();
+
 
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 
 	void TurnAtRate(float Rate);
 	void LookAtRate(float Rate);
+	
+private:
+
+	void Interact();
+	
+private:
+	
+	UPROPERTY(EditAnywhere, Category = Raycast)
+	float MaxRayLength;
 };

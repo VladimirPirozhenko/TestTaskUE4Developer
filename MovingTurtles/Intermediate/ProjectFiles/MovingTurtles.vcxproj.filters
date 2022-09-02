@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\MovingTurtles.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B8F2041E-0D52-4E71-B653-CEEE4643C625}</UniqueIdentifier>
+      <UniqueIdentifier>{08D7E342-A293-4BD0-A01C-F2AEF9F7FE00}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\MovingTurtles.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{3E005A62-95CF-45CC-866C-122E93BF19EB}</UniqueIdentifier>
+      <UniqueIdentifier>{859FC32F-8810-45B7-A18B-41F26A05342A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\MovingTurtles">
-      <UniqueIdentifier>{1A0783A5-A9D8-4C4C-A295-DE520A7BDFE9}</UniqueIdentifier>
+      <UniqueIdentifier>{CA374D9E-B7D7-443C-B869-7F306F2F4A72}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\MovingTurtles\Interactable.cpp">
       <Filter>Source\MovingTurtles</Filter>
@@ -35,12 +35,21 @@
     <ClInclude Include="..\..\Source\MovingTurtles\Interactable.h">
       <Filter>Source\MovingTurtles</Filter>
     </ClInclude>
+    <None Include="..\..\Source\MovingTurtles\Interactable.h.bak">
+      <Filter>Source\MovingTurtles</Filter>
+    </None>
     <ClCompile Include="..\..\Source\MovingTurtles\MainCharacter.cpp">
       <Filter>Source\MovingTurtles</Filter>
     </ClCompile>
+    <None Include="..\..\Source\MovingTurtles\MainCharacter.cpp.bak">
+      <Filter>Source\MovingTurtles</Filter>
+    </None>
     <ClInclude Include="..\..\Source\MovingTurtles\MainCharacter.h">
       <Filter>Source\MovingTurtles</Filter>
     </ClInclude>
+    <None Include="..\..\Source\MovingTurtles\MainCharacter.h.bak">
+      <Filter>Source\MovingTurtles</Filter>
+    </None>
     <ClCompile Include="..\..\Source\MovingTurtles\MovingTurtleGameMode.cpp">
       <Filter>Source\MovingTurtles</Filter>
     </ClCompile>
@@ -62,5 +71,23 @@
     <ClInclude Include="..\..\Source\MovingTurtles\MovingTurtlesGameModeBase.h">
       <Filter>Source\MovingTurtles</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\MovingTurtles\Nest.cpp">
+      <Filter>Source\MovingTurtles</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MovingTurtles\Nest.h">
+      <Filter>Source\MovingTurtles</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MovingTurtles\SpawnerButton.cpp">
+      <Filter>Source\MovingTurtles</Filter>
+    </ClCompile>
+    <None Include="..\..\Source\MovingTurtles\SpawnerButton.cpp.bak">
+      <Filter>Source\MovingTurtles</Filter>
+    </None>
+    <ClInclude Include="..\..\Source\MovingTurtles\SpawnerButton.h">
+      <Filter>Source\MovingTurtles</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\MovingTurtles\SpawnerButton.h.bak">
+      <Filter>Source\MovingTurtles</Filter>
+    </None>
   </ItemGroup>
 </Project>

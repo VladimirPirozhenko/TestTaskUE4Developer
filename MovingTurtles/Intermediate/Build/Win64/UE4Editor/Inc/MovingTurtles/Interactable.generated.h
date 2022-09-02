@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define MOVINGTURTLES_Interactable_generated_h
 
 #define MovingTurtles_Source_MovingTurtles_Interactable_h_13_SPARSE_DATA
-#define MovingTurtles_Source_MovingTurtles_Interactable_h_13_RPC_WRAPPERS
-#define MovingTurtles_Source_MovingTurtles_Interactable_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define MovingTurtles_Source_MovingTurtles_Interactable_h_13_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execOnInteracted);
+
+
+#define MovingTurtles_Source_MovingTurtles_Interactable_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execOnInteracted);
+
+
 #define MovingTurtles_Source_MovingTurtles_Interactable_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	MOVINGTURTLES_API UInteractable(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \

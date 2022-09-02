@@ -1,11 +1,11 @@
-V:\UnrealProjects\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-V:\UnrealProjects\MovingTurtles\Source\MovingTurtles/MovingTurtleGameMode.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameMode.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-V:\UnrealEngine\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-V:\UnrealEngine\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-V:\UnrealEngine\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameMode.generated.h
-V:\UnrealProjects\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Inc\MovingTurtles\MovingTurtleGameMode.generated.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Source\MovingTurtles/MovingTurtleGameMode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameMode.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameMode.generated.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Inc\MovingTurtles\MovingTurtleGameMode.generated.h

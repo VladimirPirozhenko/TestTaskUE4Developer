@@ -1,2 +1,2 @@
-V:\UnrealProjects\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
-V:\UnrealProjects\MovingTurtles\Source\MovingTurtles\MovingTurtles.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Source\MovingTurtles\MovingTurtles.h

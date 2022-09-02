@@ -24,5 +24,5 @@ class MOVINGTURTLES_API IInteractable
 public:
 
 	UFUNCTION()
-	virtual void Interact() = 0;
+	virtual void OnInteracted() = 0;
 };

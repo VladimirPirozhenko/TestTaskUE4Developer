@@ -1,7 +1,7 @@
-V:\UnrealProjects\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
-V:\UnrealProjects\MovingTurtles\Source\MovingTurtles\MovingTurtlesGameModeBase.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
-V:\UnrealEngine\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
-V:\UnrealEngine\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-V:\UnrealProjects\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Inc\MovingTurtles\MovingTurtlesGameModeBase.generated.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Source\MovingTurtles\MovingTurtlesGameModeBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Inc\MovingTurtles\MovingTurtlesGameModeBase.generated.h

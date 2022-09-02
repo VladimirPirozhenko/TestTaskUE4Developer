@@ -6,7 +6,8 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
-
+#include "DrawDebugHelpers.h"
+#include "Interactable.h"
 // Sets default values
 AMainCharacter::AMainCharacter()
 {
@@ -57,6 +58,30 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void AMainCharacter::Interact()
 {
+    FHitResult Hit;
+    FVector Origin = FPSCamera->GetComponentLocation();
+    FVector Destination = Origin + (FPSCamera->GetForwardVector() * MaxRayLength);
+ 
+    FCollisionQueryParams CollisionParameters;
+ 
+	bool bHit = GetWorld()->LineTraceSingleByChannel(Hit,Origin,Destination,ECollisionChannel::ECC_Visibility,CollisionParameters);
+	
+	if (!bHit)
+		return;
+	
+	AActor* HitActor = Hit.GetActor();
+	
+	if (!HitActor)
+		return;
+	
+	IInteractable* Interactable = Cast<IInteractable>(HitActor);
+	
+	if (!Interactable)
+		return;
+	
+	Interactable->OnInteracted();
+	
+    DrawDebugLine(GetWorld(), Origin, Destination, FColor::Green, true,  1.f);
 }
 
 void AMainCharacter::MoveForward(float Value)

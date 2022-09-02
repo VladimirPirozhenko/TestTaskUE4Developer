@@ -1,11 +1,11 @@
-V:\UnrealProjects\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-V:\UnrealProjects\MovingTurtles\Source\MovingTurtles/MainCharacter.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
-V:\UnrealEngine\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-V:\UnrealEngine\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-V:\UnrealEngine\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-V:\UnrealProjects\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Inc\MovingTurtles\MainCharacter.generated.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Source\MovingTurtles/MainCharacter.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Projects\UnrealProjects\TestTaskUE4Developer-main\TestTaskUE4Developer-main\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Inc\MovingTurtles\MainCharacter.generated.h
