@@ -475,3 +475,6 @@ FodyWeavers.xsd
 *.sdf
 *.sln
 *.suo
+
+MovingTurtles/Intermediate/
+MovingTurtles/Intermediate/Build/Win64/UE4Editor/Development/ActionHistory.bin
