@@ -58,7 +58,11 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMainCharacter); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMainCharacter)
 
 
-#define MovingTurtles_Source_MovingTurtles_MainCharacter_h_12_PRIVATE_PROPERTY_OFFSET
+#define MovingTurtles_Source_MovingTurtles_MainCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__MaxRayLength() { return STRUCT_OFFSET(AMainCharacter, MaxRayLength); } \
+	FORCEINLINE static uint32 __PPO__RaySphereRadius() { return STRUCT_OFFSET(AMainCharacter, RaySphereRadius); }
+
+
 #define MovingTurtles_Source_MovingTurtles_MainCharacter_h_9_PROLOG
 #define MovingTurtles_Source_MovingTurtles_MainCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

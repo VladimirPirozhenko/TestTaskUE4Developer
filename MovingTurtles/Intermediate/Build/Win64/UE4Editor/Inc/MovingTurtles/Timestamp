@@ -1,4 +1,11 @@
-V:\UnrealProjects\MovingTurtles\Source\MovingTurtles\MainCharacter.h
-V:\UnrealProjects\MovingTurtles\Source\MovingTurtles\MovingTurtlesGameModeBase.h
-V:\UnrealProjects\MovingTurtles\Source\MovingTurtles\MovingTurtleGameMode.h
-V:\UnrealProjects\MovingTurtles\Source\MovingTurtles\Interactable.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\BaseMovingStrategy.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\Interactable.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\MovingStrategy.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\MovingTurtleGameMode.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\Nest.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\SpawnerButton.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\StandardMovingStrategy.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\Turtle.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\MovingTurtlesGameModeBase.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\InterruptMovingStrategy.h
+V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\MainCharacter.h

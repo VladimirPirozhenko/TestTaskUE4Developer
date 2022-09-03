@@ -6,7 +6,8 @@
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
 #include "Components/InputComponent.h"
-
+#include "DrawDebugHelpers.h"
+#include "Interactable.h"
 // Sets default values
 AMainCharacter::AMainCharacter()
 {
@@ -16,6 +17,7 @@ AMainCharacter::AMainCharacter()
 
 	TurnRate = 45.0f;
 	LookUpRate = 45.0f;
+	MaxRayLength = 200.0f;
 
 	FPSCamera = CreateDefaultSubobject<UCameraComponent>(TEXT("FPS Camera"));
 	FPSCamera->SetupAttachment(GetCapsuleComponent());
@@ -49,7 +51,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &AMainCharacter::Interact);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &AMainCharacter::MoveForward);
-	PlayerInputComponent->BindAxis("MoveRight",this, &AMainCharacter::MoveRight);
+	PlayerInputComponent->BindAxis("MoveRight", this, &AMainCharacter::MoveRight);
 
 	PlayerInputComponent->BindAxis("Turn", this, &AMainCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &AMainCharacter::LookAtRate);
@@ -57,7 +59,32 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void AMainCharacter::Interact()
 {
+	FHitResult Hit;
+	FVector Origin = FPSCamera->GetComponentLocation();
+	FQuat Rot = FPSCamera->GetComponentRotation().Quaternion();
+	FVector Destination = Origin + (FPSCamera->GetForwardVector() * MaxRayLength);
+
+	bool bHit = GetWorld()->SweepSingleByChannel(Hit, Origin, Destination, FQuat::Identity, ECollisionChannel::ECC_Visibility, FCollisionShape::MakeSphere(RaySphereRadius));
+
+	if (!bHit)
+		return;
+
+	AActor* HitActor = Hit.GetActor();
+
+	if (!HitActor)
+		return;
+
+	IInteractable* Interactable = Cast<IInteractable>(HitActor);
+
+	if (!Interactable)
+		return;
+
+	Interactable->OnInteracted();
+
+	DrawDebugLine(GetWorld(), Origin, Destination, FColor::Green, true, 1.f);
 }
+
+
 
 void AMainCharacter::MoveForward(float Value)
 {

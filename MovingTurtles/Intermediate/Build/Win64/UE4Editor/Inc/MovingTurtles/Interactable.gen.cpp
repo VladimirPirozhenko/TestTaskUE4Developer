@@ -18,8 +18,42 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	COREUOBJECT_API UClass* Z_Construct_UClass_UInterface();
 	UPackage* Z_Construct_UPackage__Script_MovingTurtles();
 // End Cross Module References
+	DEFINE_FUNCTION(IInteractable::execOnInteracted)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnInteracted();
+		P_NATIVE_END;
+	}
 	void UInteractable::StaticRegisterNativesUInteractable()
 	{
+		UClass* Class = UInteractable::StaticClass();
+		static const FNameNativePtrPair Funcs[] = {
+			{ "OnInteracted", &IInteractable::execOnInteracted },
+		};
+		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_UInteractable_OnInteracted_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UInteractable_OnInteracted_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Interactable.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UInteractable_OnInteracted_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UInteractable, nullptr, "OnInteracted", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UInteractable_OnInteracted_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UInteractable_OnInteracted_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_UInteractable_OnInteracted()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_UInteractable_OnInteracted_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	UClass* Z_Construct_UClass_UInteractable_NoRegister()
 	{
@@ -28,6 +62,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	struct Z_Construct_UClass_UInteractable_Statics
 	{
 		static UObject* (*const DependentSingletons[])();
+		static const FClassFunctionLinkInfo FuncInfo[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
@@ -37,6 +72,9 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 	UObject* (*const Z_Construct_UClass_UInteractable_Statics::DependentSingletons[])() = {
 		(UObject* (*)())Z_Construct_UClass_UInterface,
 		(UObject* (*)())Z_Construct_UPackage__Script_MovingTurtles,
+	};
+	const FClassFunctionLinkInfo Z_Construct_UClass_UInteractable_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_UInteractable_OnInteracted, "OnInteracted" }, // 2214114102
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UInteractable_Statics::Class_MetaDataParams[] = {
@@ -51,11 +89,11 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		nullptr,
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
-		nullptr,
+		FuncInfo,
 		nullptr,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
-		0,
+		UE_ARRAY_COUNT(FuncInfo),
 		0,
 		0,
 		0x000840A1u,
@@ -70,7 +108,7 @@ void EmptyLinkFunctionForGeneratedCodeInteractable() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UInteractable, 3846539987);
+	IMPLEMENT_CLASS(UInteractable, 756505082);
 	template<> MOVINGTURTLES_API UClass* StaticClass<UInteractable>()
 	{
 		return UInteractable::StaticClass();
