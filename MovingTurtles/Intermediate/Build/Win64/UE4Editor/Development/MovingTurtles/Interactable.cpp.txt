@@ -1,3 +1,0 @@
-V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
-V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles\Interactable.h
-V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Inc\MovingTurtles\Interactable.generated.h

@@ -1,5 +1,0 @@
-V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Development\MovingTurtles\Definitions.MovingTurtles.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-V:\UnrealEngine\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Source\MovingTurtles/Interactable.h
-V:\UnrealProjects\TestTaskUE4Developer\MovingTurtles\Intermediate\Build\Win64\UE4Editor\Inc\MovingTurtles\Interactable.generated.h

@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"V:\\UnrealProjects\\TestTaskUE4Developer\\MovingTurtles\\Source\\MovingTurtles\\MovingTurtles.Build.cs",
-		"V:\\UnrealProjects\\TestTaskUE4Developer\\MovingTurtles\\Source\\MovingTurtles.Target.cs",
-		"V:\\UnrealProjects\\TestTaskUE4Developer\\MovingTurtles\\Source\\MovingTurtlesEditor.Target.cs"
-	],
-	"EngineVersion": "4.26.2"
-}
