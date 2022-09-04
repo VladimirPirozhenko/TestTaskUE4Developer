@@ -2,5 +2,5 @@
 
 To interact with buttons press E or Left Mouse Button. 
 
-The test task game contains sharks, be careful!
+The test task game contains sharks, be careful! <br />
 Enjoy! 
