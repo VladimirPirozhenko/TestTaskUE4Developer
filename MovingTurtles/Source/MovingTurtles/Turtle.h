@@ -4,10 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "BaseMovingStrategy.h"
 #include "Turtle.generated.h"
 
-UCLASS()
+UCLASS(showCategories = (Movement))
 class MOVINGTURTLES_API ATurtle : public AActor
 {
 	GENERATED_BODY()
@@ -24,10 +23,6 @@ public:
 
 	virtual void Tick(float DeltaTime) override;
 
-	void MoveToDestination();
-
-	void SetDestinationPoint(FVector Destination) { this->DestinationPoint = Destination; }
-
 	UFUNCTION(BlueprintGetter)
 	float GetSpeed() { return Speed; }
 
@@ -36,15 +31,10 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	class USceneComponent* RootSceneComponent;
 
-	UPROPERTY(VisibleAnywhere, Category = Mesh)
-	class UStaticMeshComponent* TutleMesh;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess), Category = Mesh)
+	class USkeletalMeshComponent* TutleMesh;
 
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess), Category = Movement)
-	class TSubclassOf<UBaseMovingStrategy> MovingStrategy;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintGetter = GetSpeed, Category = Movement)
+	UPROPERTY(EditAnywhere, BlueprintGetter = GetSpeed, Category = Movement)
 	float Speed = 15;
 
-	UPROPERTY(VisibleInstanceOnly)
-	FVector DestinationPoint;
 };

@@ -12,18 +12,17 @@ class MOVINGTURTLES_API AMainCharacter : public ACharacter
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this character's properties
+
 	AMainCharacter();
 
 protected:
-	// Called when the game starts or when spawned
+
 	virtual void BeginPlay() override;
 
 public:
-	// Called every frame
+	
 	virtual void Tick(float DeltaTime) override;
 
-	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 public:
@@ -41,8 +40,6 @@ public:
 	float LookUpRate = 45.0f;
 protected:
 
-
-
 	void MoveForward(float Value);
 	void MoveRight(float Value);
 
@@ -59,5 +56,5 @@ private:
 	float MaxRayLength = 200.0f;
 
 	UPROPERTY(EditAnywhere, Category = Raycast)
-	float RaySphereRadius = 10.0f;
+	float RaySphereRadius = 5.0f;
 };

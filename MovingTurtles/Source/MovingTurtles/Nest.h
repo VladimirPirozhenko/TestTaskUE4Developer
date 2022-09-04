@@ -7,27 +7,30 @@
 #include "Turtle.h"
 #include "Nest.generated.h"
 
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnTurtleSpawned);
+
 UCLASS()
 class MOVINGTURTLES_API ANest : public AActor
 {
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this actor's properties
+
 	ANest();
 
+	UPROPERTY(BlueprintAssignable)
+	FOnTurtleSpawned OnTurtleSpawned;
+
 protected:
-	// Called when the game starts or when spawned
+
 	virtual void BeginPlay() override;
 
 public:
-	// Called every frame
+
 	virtual void Tick(float DeltaTime) override;
 
 	UFUNCTION(BlueprintCallable)
 	void SpawnTurtle();
-
-	void MoveTurtles(float DeltaTime);
 
 public:
 
@@ -41,9 +44,6 @@ private:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess), Category = Spawn)
 	class TSubclassOf<ATurtle> TurtleToSpawn;
-
-	UPROPERTY(VisibleInstanceOnly, Category = Spawn)
-	TArray<ATurtle*> SpawnedTurtles;
 
 	UPROPERTY(EditAnywhere,BlueprintReadOnly,meta = (AllowPrivateAccess), Category = Destination)
 	FVector DestinationPoint;

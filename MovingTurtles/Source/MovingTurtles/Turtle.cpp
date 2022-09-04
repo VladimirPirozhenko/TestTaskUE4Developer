@@ -8,27 +8,18 @@ ATurtle::ATurtle()
 	RootSceneComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root component"));
 	RootComponent = RootSceneComponent;
 
-	TutleMesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Turtle's mesh"));
+	TutleMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Turtle's mesh"));
 	TutleMesh->SetupAttachment(RootComponent);
+
 
 }
 
 void ATurtle::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 void ATurtle::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	MoveToDestination();
 }
-
-void ATurtle::MoveToDestination()
-{
-	if (!MovingStrategy)
-		return;
-	MovingStrategy->GetDefaultObject<UBaseMovingStrategy>()->MoveToDestination(this, DestinationPoint, Speed);
-}
-

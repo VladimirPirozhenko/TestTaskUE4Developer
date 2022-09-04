@@ -18,36 +18,15 @@ ANest::ANest()
 void ANest::BeginPlay()
 {
 	Super::BeginPlay();
-
-
 }
 
 void ANest::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//if (IsSpawned)
-	MoveTurtles(DeltaTime);
 }
 
 void ANest::SpawnTurtle()
 {
-	UE_LOG(LogTemp, Warning, TEXT("SPAWNING ACTOR"));
-	FActorSpawnParameters SpawnParams;
-	ATurtle* SpawnedTurtle = GetWorld()->SpawnActor<ATurtle>(TurtleToSpawn, FVector(0), FRotator(0), SpawnParams);
-	if (!SpawnedTurtle)
-		return;
-	SpawnedTurtle->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
-	SpawnedTurtle->SetActorRelativeLocation(FVector(0));
-	SpawnedTurtle->SetDestinationPoint(DestinationPoint);
-	SpawnedTurtles.Add(SpawnedTurtle);
+	OnTurtleSpawned.Broadcast();
 }
 
-void ANest::MoveTurtles(const float DeltaTime)
-{
-	
-	//for (auto& turtle : SpawnedTurtles)
-	//{
-	//	turtle->MoveToDestination(DestinationPoint);
-	//}
-	
-}

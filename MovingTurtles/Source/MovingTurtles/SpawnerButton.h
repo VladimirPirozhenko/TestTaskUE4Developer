@@ -36,6 +36,6 @@ private:
 	UPROPERTY(VisibleAnywhere)
 	class USceneComponent* RootSceneComponent;
 
-	UPROPERTY(VisibleAnywhere, Category = Mesh)
-	class UStaticMeshComponent* ButtonMesh;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess), Category = Mesh)
+	class USkeletalMeshComponent* ButtonMesh;
 };
